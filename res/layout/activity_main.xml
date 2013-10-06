@@ -13,6 +13,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_centerInParent="true"
+        android:onClick="ButtonOnClick"
         android:text="@string/_15pct" />
 
     <Button
@@ -22,6 +23,7 @@
         android:layout_alignBaseline="@+id/btn15pct"
         android:layout_alignBottom="@+id/btn15pct"
         android:layout_toLeftOf="@+id/btn15pct"
+        android:onClick="ButtonOnClick"
         android:text="@string/_10pct" />
 
     <Button
@@ -31,6 +33,7 @@
         android:layout_alignBaseline="@+id/btn15pct"
         android:layout_alignBottom="@+id/btn15pct"
         android:layout_toRightOf="@+id/btn15pct"
+        android:onClick="ButtonOnClick"
         android:text="@string/_20pct" />
 
     <EditText
