@@ -25,20 +25,8 @@ public class MainActivity extends Activity {
     }
 
     public void ButtonOnClick(View v) {
-    	double tipPct;
-    	switch (v.getId()) {
-    		case R.id.btn10pct:
-    			tipPct = 0.1;
-    			break;
-    		case R.id.btn15pct:
-    			tipPct = 0.15;
-    			break;
-    		case R.id.btn20pct:
-    			tipPct = 0.2;
-    			break;
-    		default:
-    			throw new RuntimeException("unknown button ID");
-    	}
+    	String tag = (String) v.getTag();
+    	double tipPct = Double.parseDouble(tag);
     	showTip(tipPct);
     }
 
