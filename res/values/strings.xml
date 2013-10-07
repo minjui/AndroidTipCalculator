@@ -7,5 +7,7 @@
     <string name="_10pct">10%</string>
     <string name="_15pct">15%</string>
     <string name="_20pct">20%</string>
+    <string name="enter_the_money">Enter the money</string>
+    <string name="tip_is">Tip is:</string>
 
 </resources>

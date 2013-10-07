@@ -6,7 +6,7 @@
     android:paddingLeft="@dimen/activity_horizontal_margin"
     android:paddingRight="@dimen/activity_horizontal_margin"
     android:paddingTop="@dimen/activity_vertical_margin"
-    tools:context=".MainActivity" >
+    tools:context=".TipCalculatorActivity" >
 
     <Button
         android:id="@+id/btn15pct"
@@ -47,7 +47,7 @@
         android:layout_centerHorizontal="true"
         android:layout_marginTop="36dp"
         android:ems="10"
-        android:hint="Enter the money" >
+        android:hint="@string/enter_the_money" >
 
         <requestFocus />
     </EditText>
@@ -59,7 +59,7 @@
         android:layout_alignParentBottom="true"
         android:layout_centerHorizontal="true"
         android:layout_marginBottom="72dp"
-        android:text="Tip is:"
+        android:text="@string/tip_is"
         android:textAppearance="?android:attr/textAppearanceMedium" />
 
 </RelativeLayout>

@@ -8,13 +8,14 @@ import android.view.Menu;
 import android.view.View;
 import android.widget.EditText;
 import android.widget.TextView;
+import android.widget.Toast;
 
-public class MainActivity extends Activity {
+public class TipCalculatorActivity extends Activity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_main);
+        setContentView(R.layout.activity_tip_calculator);
     }
 
     @Override
@@ -26,8 +27,13 @@ public class MainActivity extends Activity {
 
     public void ButtonOnClick(View v) {
     	String tag = (String) v.getTag();
-    	double tipPct = Double.parseDouble(tag);
-    	showTip(tipPct);
+    	try {
+    		double tipPct = Double.parseDouble(tag);
+    		showTip(tipPct);
+    	} catch (NumberFormatException e) {
+    		Toast.makeText(this, "Please enter number only", Toast.LENGTH_SHORT).show();
+    		return;
+    	}
     }
 
 	private void showTip(double tipPct) {
